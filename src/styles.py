@@ -291,4 +291,93 @@ QLabel#FooterText {{
     font-size: 12px;
     line-height: 1.4;
 }}
+
+/* Dialogs */
+QDialog {{
+    background-color: {BG_DARK};
+    color: {TEXT_PRIMARY};
+}}
+
+QFrame.dialog-card {{
+    background-color: {BG_CARD};
+    border: 1px solid {BORDER_MUTED};
+    border-radius: 12px;
+}}
+
+QPushButton.btn-dialog-primary {{
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 {PURPLE_PRIMARY}, stop:1 {PURPLE_DARK});
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 800;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}}
+
+QPushButton.btn-dialog-primary:hover {{
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #a78bfa, stop:1 {PURPLE_HOVER});
+}}
+
+QPushButton.btn-dialog-secondary {{
+    background-color: rgba(56, 189, 248, 0.1);
+    color: {BLUE_ELECTRIC};
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid {BLUE_ELECTRIC};
+}}
+
+QPushButton.btn-dialog-secondary:hover {{
+    background-color: rgba(56, 189, 248, 0.2);
+    color: #ffffff;
+}}
+
+QPushButton.btn-dialog-danger {{
+    background-color: rgba(245, 158, 11, 0.15);
+    color: {WARNING_AMBER};
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid {WARNING_AMBER};
+}}
+
+QPushButton.btn-dialog-danger:hover {{
+    background-color: rgba(245, 158, 11, 0.3);
+}}
+
+QPushButton.btn-dialog-close {{
+    background-color: transparent;
+    color: {TEXT_MUTED};
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid {BORDER_MUTED};
+}}
+
+QPushButton.btn-dialog-close:hover {{
+    background-color: {BG_HOVER};
+    color: {TEXT_PRIMARY};
+}}
+
+QCheckBox {{
+    color: {TEXT_PRIMARY};
+    font-size: 13px;
+    spacing: 8px;
+}}
+
+QCheckBox::indicator {{
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 1px solid {BORDER_MUTED};
+    background-color: {BG_CARD};
+}}
+
+QCheckBox::indicator:checked {{
+    background-color: {PURPLE_PRIMARY};
+    border-color: {PURPLE_PRIMARY};
+}}
 """

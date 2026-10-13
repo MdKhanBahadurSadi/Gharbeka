@@ -18,3 +18,8 @@ env/
 .pytest_cache/
 .coverage
 htmlcov/
+
+# PyInstaller & Build
+build/
+dist/
+*.egg-info/
